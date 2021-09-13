@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1: 가능한 input들</title>
+</head>
+<body>
+    <div>
+        <input name = "name" type="text" placeholder="name">
+        <input name = "password" type="text" placeholder="password">
+    </div>
+    <div>
+        what's your favorite color?
+        <input name = "color" type = "radio" value = "red"> Red
+        <input name = "color" type = "radio" value = "green"> Blue
+        <input name = "color" type = "radio" value = "other"> Other
+    </div>
+    <div>
+        <input name = "country" list = "countries" placeholder="Country">
+        <datalist id = "countries">
+            <option value="Korea, Republic of"></option>
+            <option value="England"></option>
+            <option value="China"></option>
+            <option value="USA"></option>
+        </datalist>
+    </div>
+</body>
+</html>
