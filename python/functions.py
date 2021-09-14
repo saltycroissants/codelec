@@ -3,3 +3,5 @@ def square(x):
 
 for i in range(10):
     print(f"The square of {i} is {square(i)}")
+
+#how to use funciton from another file?

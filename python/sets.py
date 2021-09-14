@@ -12,6 +12,6 @@ s.add(2)
 s.remove(1)
 
 # number of elements
-print("set에 들어있는 elements: " +len(s))
+print(s)
 
 

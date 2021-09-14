@@ -2,4 +2,5 @@ name = input("Name: ")
 print("Hello, " + name)
 
 #fstring (formatted string) - string
-print(f"Hello {name}?")
+name2 = input("Name: ")
+print(f"Hello {name2}?")

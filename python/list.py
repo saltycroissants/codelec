@@ -7,3 +7,4 @@ print(names)
 
 #sorting
 names.sort()
+print(names)

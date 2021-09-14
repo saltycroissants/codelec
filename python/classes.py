@@ -8,5 +8,10 @@ class Point():
 
 #새 객체 만들기
 p = Point(2,8)
+p2 = Point(3,7)
+
 print(p.x)
 print(p.y)
+
+print(p2.x)
+print(p2.y)
