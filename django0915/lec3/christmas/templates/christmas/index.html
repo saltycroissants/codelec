@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Christmas</title>
+    <link rel="stylesheet" href="{% static 'christmas/style.css'%}">
 </head>
 <body>
-    <ul>
-        {% for task in tasks%}
-            <li>{{task}}</li>
-        {% endfor%}
-    </ul>
+    {% if christmas %}
+    <h1>YES</h1>
+    {% else %}
+    <h1>NO</h1>
+    {% endif %}
 </body>
 </html>
