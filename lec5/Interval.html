@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let count =0;
+        function counter(){
+            count ++;
+            document.querySelector('h1').innerHTML =count;
+        }
+
+        /* avoid mixing html with javascript*/
+        //functional programming - in javascript, we can pass a function as a variable
+        //when dom is loaded, 
+        document.addEventListener('DOMContentLoaded', function(){
+           setInterval(counter, 1000);
+        });
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+</body>
+</html>

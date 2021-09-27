@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+
+            //by default submit button is disabled
+            document.querySelector('#submit').disabled = true;
+            
+            //on keyup submit button enabled
+            document.querySelector('#task').onkeyup = () => {
+                //if value.length>0 can also be written
+                document.querySelector('#submit').disabled = false;
+            }
+
+            document.querySelector('form').onsubmit = () => {
+                const task = document.querySelector('#task').value;
+                console.log(task);
+                
+                const li = document.createElement('li');
+                li.innerHTML = task;
+                //unorderedliust
+                document.querySelector('#tasks').append(li);
+
+                   // Clear out input field:
+                 document.querySelector('#task').value = '';
+                 document.querySelector('#submit').disabled = true;
+                
+                //stop form from submitting
+                return false;
+            }
+        })
+    </script>
+</head>
+<body>
+    <h1>Tasks</h1>
+    <ul id="tasks">
+
+    </ul>
+    <form action="">
+        <input type = "text" placeholder = "New Task" id="task">
+        <input id = "submit" type="submit">
+    </form>
+</body>
+</html>
